@@ -2,25 +2,21 @@
 <html lang="en">
   <head>
     <script>
-        let password
+      let password;
       let login = prompt("Ваш логин?", "");
       if (login == "Админ") {
-        password = prompt("Ваш пароль?",'');
-        if(password == 'Я Главный') {
-            alert("Привет!");
+        password = prompt("Ваш пароль?", "");
+        if (password == "Я Главный") {
+          alert("Привет!");
+        } else if (password == null) {
+          alert("Отменено");
+        } else {
+          alert("Неверный пароль");
         }
-        else if(password == null) {
-            alert("Отменено");
-        }
-        else {
-            alert("Неверный пароль");
-        }
-      }
-      else if(login == null) {
+      } else if (login == null) {
         alert("Отменено");
-      }
-      else {
-        alert('Я вас не знаю!');
+      } else {
+        alert("Я вас не знаю!");
       }
     </script>
   </head>
