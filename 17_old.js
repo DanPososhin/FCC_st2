@@ -5,4 +5,4 @@ function typeValidation(variable, type) {
       else{
         return false;
     }
-  }
+  }е
